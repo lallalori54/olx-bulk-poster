@@ -1,11 +1,9 @@
 {
   "name": "olx-backend",
   "version": "1.0.0",
-  "description": "OLX Bulk Poster Backend",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "worker": "node workers/postWorker.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.18.2",
@@ -13,9 +11,11 @@
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "bcryptjs": "^2.4.3",
+    "node-cron": "^3.0.2"
+  },
+  "optionalDependencies": {
     "puppeteer": "^21.3.8",
     "puppeteer-extra": "^3.3.6",
-    "puppeteer-extra-plugin-stealth": "^2.11.2",
-    "node-cron": "^3.0.2"
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
   }
 }
